@@ -1,0 +1,149 @@
+/*This is for general styles*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: darkblue;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/*This section styles my Header elements*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(207, 235, 235);
+    padding-left: 20px;
+    padding-right: 40px;
+    height: 200px;
+    align-items: end;
+}
+.profilepic {
+    width: 100px;
+    height: 120px;
+}
+header>nav>ul {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: space-between;
+    list-style: none;
+}
+header>nav>ul>li>a:hover {
+    box-shadow: 0 3px rgb(74, 13, 243);
+    color: rgb(74, 13, 243);
+}
+
+/*This section styles my Main section elements*/
+.subtitle {
+    height: 100px;
+    padding-right: 40px;
+    padding-top: 40px;
+    text-align: end;
+    font-style: italic;
+    color: rgb(50, 50, 187);
+    font-size: 18px;
+}
+.main-sections {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.main-sections>h2 {
+    flex: 1;
+    text-align: end;
+}
+.main-sections>hr {
+    border: none;
+    width: 4px;
+    background-color: rgb(63, 62, 62);
+    margin-left: 15px;
+    margin-right: 50px;
+}
+.main-sections>.content {
+    flex: 4;
+    padding-right: 40px;
+}
+main>section>nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+main>section>nav>ul>li:hover {
+    box-shadow: 0 0 5px gray;
+    background-color: rgb(236, 234, 234);
+}
+
+/*Added this special section to style the complex "Cards" area of the page under work*/
+.cards-layout {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+.card-child {
+    display: flex;
+    align-items: end;
+    height: 300px;
+    min-width: 340px;
+    border: 8px solid rgb(207, 235, 235);
+    background-image: url(./images/card_background.PNG);
+    background-size: cover;
+}
+.card-child:first-child {
+    width: 100%;
+}
+.card-child:not(:first-child) {
+    flex: 1 1 340px;
+}
+.card-child:hover {
+    box-shadow: 0 0 13px gray;
+}
+.cards>p {
+    margin: 0;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(207, 235, 235);
+    line-height: 40px;
+    vertical-align: middle;
+    padding-left: 4px;
+}
+
+/*This section is for Media Queries for responsiveness at various screen sizes*/
+@media screen and (max-width: 1000px) {
+    .main-sections {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .main-sections>hr {
+        height: 4px;
+        width: 100%;
+        margin-left: 0;
+    }
+    header {
+        height: 230px;
+    }
+    .main-sections>h2 {
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    header>nav>ul {
+        justify-content: space-evenly;
+    }
+    main>section>nav>ul {
+        flex-direction: column;
+        line-height: 35px;
+    }
+}
