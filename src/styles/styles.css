@@ -23,14 +23,14 @@ header {
     width: 100px;
     height: 120px;
 }
-header>nav>ul {
+.nav-bar {
     display: flex;
     flex-direction: row;
     width: 500px;
     justify-content: space-between;
     list-style: none;
 }
-header>nav>ul>li>a:hover {
+.nav-bar>li>a:hover {
     box-shadow: 0 3px rgb(74, 13, 243);
     color: rgb(74, 13, 243);
 }
@@ -89,7 +89,7 @@ main>section>nav>ul>li:hover {
     height: 300px;
     min-width: 340px;
     border: 8px solid rgb(207, 235, 235);
-    background-image: url(./images/card_background.PNG);
+    background-image: url('/card_background.png');
     background-size: cover;
 }
 .card-child:first-child {

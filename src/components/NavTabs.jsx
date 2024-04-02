@@ -4,16 +4,50 @@ function NavTabs() {
     const currentPage = useLocation().pathname;
 
     return (
-        <ul className='nav-bar'>
-            <li className='nav-item'>
-                <Link
-                    to= '/'
-                    className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-                >
-                    Home
-                </Link>
-            </li>
-        </ul>
+        <header>
+            <h1>
+                <img className='profilepic' src="../../public/profilepic.jpg" alt="" />
+                FullPersonDev
+            </h1>
+            <ul className='nav-bar'>
+                <li className='nav-item'>
+                    <Link
+                        to= '/'
+                        className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+                    >
+                        Home
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                    <a 
+                        href="#aboutme"
+                        className='nav-link'>
+                        About Me
+                    </a>
+                </li>
+                <li className='nav-item'>
+                    <a 
+                    href="#work"
+                    className='nav-link'>
+                        Work
+                    </a>
+                </li>
+                <li className='nav-item'>
+                    <a 
+                    href="#contactme"
+                    className='nav-link'>
+                        Contact Me
+                    </a>
+                </li>
+                <li className='nav-item'>
+                    <a 
+                    href="https://github.com/FullPersonDev"
+                    className='nav-link'>
+                        GitHub Profile
+                    </a>
+                </li>
+            </ul>
+        </header>
     );
 }
 
