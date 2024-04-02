@@ -1,6 +1,5 @@
 export default function Home() {
     return (
-
         <main>
         <section class="subtitle">The best way to tackle a big problem is by breaking it down into smaller pieces.</section>
         <section id="aboutme" class="main-sections">
