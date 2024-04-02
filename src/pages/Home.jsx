@@ -2,7 +2,7 @@ export default function Home() {
     return (
         <main>
         <section className="subtitle">The best way to tackle a big problem is by breaking it down into smaller pieces.</section>
-        <section id="aboutme" class="main-sections">
+        <section id="aboutme" className="main-sections">
             <h2>About Me</h2>
             <hr />
             <div className="content">

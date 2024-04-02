@@ -42,7 +42,8 @@ function NavTabs() {
                 <li className='nav-item'>
                     <a 
                     href="https://github.com/FullPersonDev"
-                    className='nav-link'>
+                    className='nav-link'
+                    target='_blank'>
                         GitHub Profile
                     </a>
                 </li>
