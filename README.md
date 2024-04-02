@@ -1,9 +1,10 @@
 # React Portfolio
 
-## GitHub Repository Link
+## GitHub Repository Link:
 https://github.com/FullPersonDev/reactportfolio
 
-## Deployed Web Application Link
+## Deployed Web Application Link (Netlify):
+https://main--aquamarine-pony-d3a082.netlify.app/
 
 ## Mock-Up
 

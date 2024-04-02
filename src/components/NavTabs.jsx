@@ -6,7 +6,7 @@ function NavTabs() {
     return (
         <header>
             <h1>
-                <img className='profilepic' src="../../public/profilepic.jpg" alt="" />
+                <img className='profilepic' src="/profilepic.jpg" alt="" />
                 FullPersonDev
             </h1>
             <ul className='nav-bar'>
